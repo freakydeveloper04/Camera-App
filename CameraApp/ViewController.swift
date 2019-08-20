@@ -1,4 +1,3 @@
-//  @freakydeveloper04
 //  ViewController.swift
 //  CameraApp
 //  Copyright © 2019 TA. All rights reserved.

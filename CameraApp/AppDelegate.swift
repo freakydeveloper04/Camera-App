@@ -1,4 +1,3 @@
-//  @freakydeveloper04
 //  AppDelegate.swift
 //  CameraApp
 //  Copyright © 2019 TA. All rights reserved.
