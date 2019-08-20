@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CameraApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vb9-4u-fxw">
+                                <rect key="frame" x="17" y="64" width="62" height="30"/>
+                                <color key="backgroundColor" red="0.98814231157302856" green="0.97269922494888306" blue="0.31668025255203247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Iek-Zx-HY6"/>
+                                    <constraint firstAttribute="width" constant="62" id="ZeF-oM-ZGq"/>
+                                </constraints>
+                                <state key="normal" title="CAMERA">
+                                    <color key="titleColor" red="0.078829370859999998" green="0.029584537899999999" blue="0.3295417746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="CameraAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WHd-lj-H2Q"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IjF-0X-ol1">
+                                <rect key="frame" x="17" y="136" width="342" height="521"/>
+                                <color key="backgroundColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="0.1384845891" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="342" id="bxs-fq-pgx"/>
+                                    <constraint firstAttribute="height" constant="521" id="u68-Bh-B9U"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cc2-T1-822">
+                                <rect key="frame" x="243" y="64" width="116" height="30"/>
+                                <color key="backgroundColor" red="0.98814231157302856" green="0.97269922494888306" blue="0.31668025255203247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="116" id="n39-Q7-QkF"/>
+                                    <constraint firstAttribute="height" constant="30" id="znM-Cz-svg"/>
+                                </constraints>
+                                <state key="normal" title="PHOTO LIBRARY">
+                                    <color key="titleColor" red="0.078829370859999998" green="0.029584537899999999" blue="0.3295417746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="PhotoLibraryAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="keZ-2E-WNj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="0.1384845891" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cc2-T1-822" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="Tbk-dX-44B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cc2-T1-822" secondAttribute="trailing" constant="16" id="dcx-VN-gxu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IjF-0X-ol1" secondAttribute="trailing" constant="16" id="ic5-Rr-J63"/>
+                            <constraint firstItem="vb9-4u-fxw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="pYK-wh-tfA"/>
+                            <constraint firstItem="vb9-4u-fxw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="qDv-Ey-Qg0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IjF-0X-ol1" secondAttribute="bottom" constant="10" id="sy0-R4-miF"/>
+                            <constraint firstItem="IjF-0X-ol1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="xsS-X0-bGU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Camera" destination="vb9-4u-fxw" id="Jw8-iT-4df"/>
+                        <outlet property="Image" destination="IjF-0X-ol1" id="tcz-II-TeB"/>
+                        <outlet property="PhotoLibrary" destination="cc2-T1-822" id="0J8-8R-gJa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
